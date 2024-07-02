@@ -8,7 +8,7 @@ import StoreSvg from "@/app/assets/project/3d-store.svg"
 
 import SocialMedia from "../components/SocialMedia";
 import InstagramSvg from "@/app/assets/social/instagram.svg"
-import LinkedInSvg from "@/app/assets/social/linkedIn.svg"
+import LinkedInSvg from "@/app/assets/social/linkedin.svg"
 import YoutubeSvg from "@/app/assets/social/youtube.svg"
 import ArtstationSvg from "@/app/assets/social/artstation.svg"
 import { Container } from "../styles/layout";
