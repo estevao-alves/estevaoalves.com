@@ -3,14 +3,14 @@ import BackgroundGridSvg from "@/app/assets/background-grid.svg";
 import Banner from "./Banner";
 
 import ProjectItem from "../components/ProjectItem";
-import InstallySvg from "@/app/assets/project/instally.svg"
-import StoreSvg from "@/app/assets/project/3d-store.svg"
+import InstallySvg from "../assets/project/instally.svg"
+import StoreSvg from "../assets/project/3d-store.svg"
 
 import SocialMedia from "../components/SocialMedia";
-import InstagramSvg from "@/app/assets/social/instagram.svg"
-import LinkedInSvg from "@/app/assets/social/linkedin.svg"
-import YoutubeSvg from "@/app/assets/social/youtube.svg"
-import ArtstationSvg from "@/app/assets/social/artstation.svg"
+import InstagramSvg from "../assets/social/instagram.svg"
+import LinkedInSvg from "../assets/social/linkedin.svg"
+import YoutubeSvg from "../assets/social/youtube.svg"
+import ArtstationSvg from "../assets/social/artstation.svg"
 import { Container } from "../styles/layout";
 
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
