@@ -9,10 +9,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    overflow: hidden;
-  }
-
   h1, h2, h3, h4, p, span {
     color: white;
   }

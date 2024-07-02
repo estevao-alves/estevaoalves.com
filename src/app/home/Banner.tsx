@@ -21,12 +21,13 @@ const Wrapper = styled.div`
     }
 
     .mainLogo {
+      --size: 160px;
       position: absolute;
       top: 100%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 160px;
-      width: 160px;
+      height: var(--size);
+      width: var(--size);
       z-index: 10;
     }
 
@@ -55,6 +56,8 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 576px) {
+    --height: 200px;
+
     .content {
       .wireframeLogo {
         margin: 0 auto;
@@ -62,6 +65,28 @@ const Wrapper = styled.div`
 
       img {
         display: none;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    --height: 100px;
+
+    .content {
+      .wireframeLogo {
+        margin: 0 auto;
+
+        svg {
+          padding: 10px;
+        }
+      }
+
+      .mainLogo {
+        --size: 100px;
+      }
+
+      img {
+        max-width: 50px;
       }
     }
   }

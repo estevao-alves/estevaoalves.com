@@ -39,13 +39,14 @@ const Wrapper = styled.div`
       border-radius: 20px;
       transform: scale(1.04);
       background-color: #FFFFFF05;
+      box-shadow: inset 0 0 60px rgba(255, 255, 255, .08);
       outline-color: var(--purple);
     }
   }
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
+    gap: 40px;
     
     .item {
       h2 {
@@ -60,7 +61,7 @@ const Wrapper = styled.div`
 `;
 
 export type ProjectItem = {
-  Image: React.ReactNode,
+  Icon: React.ReactNode,
   Title: string,
   Description: string,
   Url: string
@@ -75,7 +76,7 @@ export default function ProjectItem({ projectsList }: ComponentTypes) {
     {projectsList.map((item, i: number) => {
       return <div key={i} className="item">
         <Link href={item.Url} target="_blank" className="link">
-          {item.Image}
+          {item.Icon}
           <h2>{item.Title}</h2>
           <p dangerouslySetInnerHTML={{ __html: item.Description }} />
         </Link>
