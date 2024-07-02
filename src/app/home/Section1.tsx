@@ -7,7 +7,7 @@ import InstallySvg from "../assets/project/instally.svg"
 import StoreSvg from "../assets/project/3d-store.svg"
 
 import SocialMedia from "../components/SocialMedia";
-import InstagramSvg from "../assets/social/instagram.svg"
+// import InstagramSvg from "../assets/social/instagram.svg"
 import LinkedInSvg from "../assets/social/linkedin.svg"
 import YoutubeSvg from "../assets/social/youtube.svg"
 import ArtstationSvg from "../assets/social/artstation.svg"
