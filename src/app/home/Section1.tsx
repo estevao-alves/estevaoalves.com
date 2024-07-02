@@ -7,7 +7,7 @@ import InstallySvg from "../assets/project/instally.svg"
 import StoreSvg from "../assets/project/3d-store.svg"
 
 import SocialMedia from "../components/SocialMedia";
-import InstagramSvg from "../assets/social/instagram.svg"
+// import InstagramSvg from "../assets/social/instagram.svg"
 import LinkedInSvg from "../assets/social/linkedin.svg"
 import YoutubeSvg from "../assets/social/youtube.svg"
 import ArtstationSvg from "../assets/social/artstation.svg"
@@ -135,7 +135,7 @@ export default function Section1() {
   });
 
   const socialApps = [
-    { Icon: <InstagramSvg />, Name: 'Instagram', Url: 'https://www.instagram.com/my.cozydragon' },
+    /* { Icon: <InstagramSvg />, Name: 'Instagram', Url: 'https://www.instagram.com/my.cozydragon' }, */
     { Icon: <LinkedInSvg />, Name: 'LinkedIn', Url: 'https://www.linkedin.com/in/estevao-alves' },
     { Icon: <YoutubeSvg />, Name: 'Youtube', Url: 'https://www.youtube.com/@MyCozyDragon' },
     { Icon: <ArtstationSvg />, Name: 'Artstation', Url: 'https://www.artstation.com/estevaoalves' }
