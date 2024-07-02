@@ -107,7 +107,7 @@ export default function Section1() {
   });
 
   const socialApps = [
-    { Image: <InstagramSvg />, Name: 'Instagram', Url: 'https://www.instagram.com/my.cozydragon' },
+    // { Image: <InstagramSvg />, Name: 'Instagram', Url: 'https://www.instagram.com/my.cozydragon' },
     { Image: <LinkedInSvg />, Name: 'LinkedIn', Url: 'https://www.linkedin.com/in/estevao-alves' },
     { Image: <YoutubeSvg />, Name: 'Youtube', Url: 'https://www.youtube.com/@MyCozyDragon' },
     { Image: <ArtstationSvg />, Name: 'Artstation', Url: 'https://www.artstation.com/estevaoalves' }
