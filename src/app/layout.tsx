@@ -13,7 +13,8 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "Estevão Alves",
+    title: "Stay",
+    description: "Full-Stack Developer and 3D Animator"
 };
 
 export default function RootLayout({ children, }: Readonly<{

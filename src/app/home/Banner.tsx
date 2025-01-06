@@ -33,7 +33,7 @@ const Wrapper = styled.div`
             }
         }
 
-        img {
+        .profileImage {
             position: absolute;
             right: 0;
             bottom: 0;
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
                 }
             }
 
-            img {
+            .profileImage {
                 right: -20px;
                 max-width: 350px;
             }
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
                 margin: 0 auto;
             }
 
-            img {
+            .profileImage {
                 display: none;
             }
         }
@@ -84,11 +84,9 @@ const Wrapper = styled.div`
             }
 
             .mainLogo {
-                --size: 100px;
-            }
-
-            img {
-                max-width: 50px;
+                img {
+                    --size: 100px;
+                }
             }
         }
     }
@@ -101,11 +99,12 @@ export default function Banner() {
                 <div className="wireframeLogo">
                     <LogoGoldenRatio/>
                 </div>
+
                 <div className="mainLogo">
                     <img src="icon-cozy-dragon.png" alt="cozy-dragon-icon"/>
                 </div>
 
-                <img src="banner-image.png" alt="profile-image"/>
+                <img className="profileImage" src="banner-image.png" alt="profile-image"/>
             </div>
         </Container>
     </Wrapper>
