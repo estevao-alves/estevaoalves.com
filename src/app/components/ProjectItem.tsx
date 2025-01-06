@@ -61,26 +61,26 @@ const Wrapper = styled.div`
 `;
 
 export type ProjectItem = {
-  Icon: React.ReactNode,
-  Title: string,
-  Description: string,
-  Url: string
+    Icon: React.ReactNode,
+    Title: string,
+    Description: string,
+    Url: string
 }
 
 interface ComponentTypes {
-  projectsList: ProjectItem[],
+    projectsList: ProjectItem[],
 }
 
-export default function ProjectItem({ projectsList }: ComponentTypes) {
-  return <Wrapper>
-    {projectsList.map((item, i: number) => {
-      return <div key={i} className="item">
-        <Link href={item.Url} target="_blank" className="link">
-          {item.Icon}
-          <h2>{item.Title}</h2>
-          <p dangerouslySetInnerHTML={{ __html: item.Description }} />
-        </Link>
-      </div>
-    })}
-  </Wrapper>
+export default function ProjectItem({projectsList}: ComponentTypes) {
+    return <Wrapper>
+        {projectsList.map((item, i: number) => {
+            return <div key={i} className="item">
+                <Link href={item.Url} target="_blank" className="link">
+                    {item.Icon}
+                    <h2>{item.Title}</h2>
+                    <p dangerouslySetInnerHTML={{__html: item.Description}}/>
+                </Link>
+            </div>
+        })}
+    </Wrapper>
 }

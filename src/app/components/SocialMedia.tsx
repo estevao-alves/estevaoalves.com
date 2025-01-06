@@ -74,24 +74,24 @@ const Wrapper = styled.div`
 `;
 
 export type SocialApp = {
-  Icon: React.ReactNode,
-  Name: string,
-  Url: string
+    Icon: React.ReactNode,
+    Name: string,
+    Url: string
 }
 
 interface ComponentTypes {
-  socialAppsList: SocialApp[],
+    socialAppsList: SocialApp[],
 }
 
-export default function SocialMedia({ socialAppsList }: ComponentTypes) {
-  return <Wrapper>
-    {socialAppsList.map((item, i: number) => {
-      return <div key={i} className="item">
-        <Link href={item.Url} target="_blank" className="link">
-          {item.Icon}
-          <span>{item.Name}</span>
-        </Link>
-      </div>
-    })}
-  </Wrapper>
+export default function SocialMedia({socialAppsList}: ComponentTypes) {
+    return <Wrapper>
+        {socialAppsList.map((item, i: number) => {
+            return <div key={i} className="item">
+                <Link href={item.Url} target="_blank" className="link">
+                    {item.Icon}
+                    <span>{item.Name}</span>
+                </Link>
+            </div>
+        })}
+    </Wrapper>
 }
